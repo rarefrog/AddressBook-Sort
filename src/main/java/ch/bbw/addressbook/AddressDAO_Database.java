@@ -1,11 +1,15 @@
 package ch.bbw.addressbook;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,7 +66,8 @@ public class AddressDAO_Database implements AddressDAO {
 //			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //			String currentTime = sdf.format(address.getRegistrationDate());
 //			preparedStatement.setString(4, currentTime);
-			preparedStatement.setDate(4, new java.sql.Date(address.getRegistrationDate().getTime()));
+			preparedStatement.setDate(4, new java.sql.Date(address.getRegistrationDate().getTime()));	
+				
 			//—>>> Datenbankfeld umdefinieren auf datetime
 			preparedStatement .executeUpdate();
 		} catch (SQLException e) {

@@ -51,5 +51,4 @@ public class Address {
 	public void setRegistrationDate(Date registrationDate) {
 		this.registrationDate = registrationDate;
 	}
-
 }

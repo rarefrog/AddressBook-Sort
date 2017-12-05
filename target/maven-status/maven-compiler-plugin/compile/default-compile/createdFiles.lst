@@ -1,0 +1,7 @@
+ch\bbw\addressbook\AddressDAO_Memory.class
+ch\bbw\addressbook\AddressDAO.class
+ch\bbw\addressbook\LastnameFirstnameRegistrationDatecomparator.class
+ch\bbw\addressbook\Address.class
+ch\bbw\addressbook\AddressDAO_Database.class
+ch\bbw\addressbook\AddressService.class
+ch\bbw\addressbook\AddressViewController.class
