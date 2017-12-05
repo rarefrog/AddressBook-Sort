@@ -39,5 +39,4 @@ public class TestAddress {
 		assertNotNull(address.getRegistrationDate());
 		assertTrue(address.getRegistrationDate().equals(date));
 	}
-
 }
