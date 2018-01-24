@@ -1,7 +1,7 @@
-D:\M151\M151Workspace\AddressBookStart\src\main\java\ch\bbw\addressbook\AddressViewController.java
-D:\M151\M151Workspace\AddressBookStart\src\main\java\ch\bbw\addressbook\Address.java
-D:\M151\M151Workspace\AddressBookStart\src\main\java\ch\bbw\addressbook\AddressDAO.java
-D:\M151\M151Workspace\AddressBookStart\src\main\java\ch\bbw\addressbook\AddressDAO_Memory.java
-D:\M151\M151Workspace\AddressBookStart\src\main\java\ch\bbw\addressbook\AddressDAO_Database.java
-D:\M151\M151Workspace\AddressBookStart\src\main\java\ch\bbw\addressbook\LastnameFirstnameRegistrationDatecomparator.java
-D:\M151\M151Workspace\AddressBookStart\src\main\java\ch\bbw\addressbook\AddressService.java
+D:\M151\M151Workspace\AddressBook-Sort\src\main\java\ch\bbw\addressbook\AddressDAO.java
+D:\M151\M151Workspace\AddressBook-Sort\src\main\java\ch\bbw\addressbook\AddressViewController.java
+D:\M151\M151Workspace\AddressBook-Sort\src\main\java\ch\bbw\addressbook\LastnameFirstnameRegistrationDatecomparator.java
+D:\M151\M151Workspace\AddressBook-Sort\src\main\java\ch\bbw\addressbook\AddressDAO_Memory.java
+D:\M151\M151Workspace\AddressBook-Sort\src\main\java\ch\bbw\addressbook\AddressService.java
+D:\M151\M151Workspace\AddressBook-Sort\src\main\java\ch\bbw\addressbook\AddressDAO_Database.java
+D:\M151\M151Workspace\AddressBook-Sort\src\main\java\ch\bbw\addressbook\Address.java

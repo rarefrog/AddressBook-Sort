@@ -8,6 +8,7 @@ public class LastnameFirstnameRegistrationDatecomparator implements Comparator<A
  public int compare(Address o1, Address o2) {
 	// TODO Auto-generated method stub
 	int c;
+	/*
 	c = o1.getLastname().compareTo(o2.getLastname()); 
 	if (c == 0)
 		c=o1.getFirstname().compareTo(o2.getFirstname()); 
@@ -15,4 +16,15 @@ public class LastnameFirstnameRegistrationDatecomparator implements Comparator<A
 		c=o1.getRegistrationDate().compareTo(o2.getRegistrationDate()); 
 		return c;
 	}
+	*/
+	
+	
+	c=o1.getRegistrationDate().compareTo(o2.getRegistrationDate());
+	if (c == 0)
+		c = o1.getLastname().compareTo(o2.getLastname());
+	if (c == 0)
+		c=o1.getFirstname().compareTo(o2.getFirstname());
+		return c;
+	}
+	
 }
