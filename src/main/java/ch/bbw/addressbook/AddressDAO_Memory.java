@@ -3,9 +3,12 @@ package ch.bbw.addressbook;
 import java.util.ArrayList;
 import java.util.List;
 
-//@Named
-//@ApplicationScoped
-public class AddressDAO_Memory /*implements AddressDAO*/{
+import javax.faces.bean.ApplicationScoped;
+import javax.inject.Named;
+
+@Named("AddressDAO_Memory")
+@ApplicationScoped
+public class AddressDAO_Memory implements AddressDAO {
 		
 	private List<Address> addresses = new ArrayList<>();
 	

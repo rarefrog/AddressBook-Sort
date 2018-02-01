@@ -29,6 +29,10 @@
 			            </ui:repeat>
 					</tbody>
 					</table>
+					<h:selectOneMenu value="#{addressViewController.whichComp}">
+					   	<f:selectItem itemValue="true" itemLabel="Lastname" />
+					   	<f:selectItem itemValue="false" itemLabel="registrationDate" />
+					</h:selectOneMenu>
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:ui="http://java.sun.com/jsf/facelets">
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
 <h:head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title><ui:insert name="title"/></title>
@@ -9,7 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-    
+   
 </h:head>
 <h:body>
 	<div class="container-fluid">
@@ -20,6 +21,10 @@
 			<div class="col-md-12">
 	            <h:link value="add address" outcome="addAddress" class="btn btn-default"/>&#160;
 	            <h:link value="show addresses" outcome="showAddresses" class="btn btn-default"/>
+	            <h:selectOneMenu value="#{AddressViewController.whichComp}" >
+					<f:selectItem itemValue="sort1" itemLabel="Sortieren nach Nachname, Vorname, Registrierungsdatum" />
+					<f:selectItem itemValue="sort2" itemLabel="Sortieren nach Registrationsdatum, Nachname, Vorname" />
+				</h:selectOneMenu>
 	            <hr />
 			</div>
 			<div class="col-md-12">

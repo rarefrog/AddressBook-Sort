@@ -1,5 +1,6 @@
 package ch.bbw.addressbook;
 
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -12,8 +13,9 @@ import javax.inject.Named;
 public class AddressService {
 	
 	@Inject
-	@Named("AddressDAO")
+	@Named("AddressDAO_Memory")
 	private AddressDAO addressDAO;
+	private Comparator<Address> comparator;
 	
 	
 	public List<Address> getAllAddresses() {
@@ -27,8 +29,7 @@ public class AddressService {
 //			return a1.getLastname().compareTo(a2.getLastname()); 
 //		});
 		
-		addresses.sort(new LastnameFirstnameRegistrationDatecomparator());
-		
+		addresses.sort(comparator);
 		return addresses;
 	}
 	
@@ -40,6 +41,14 @@ public class AddressService {
 
 	public void setAddressDAO(AddressDAO addressDAO) {
 		this.addressDAO = addressDAO;
+	}
+
+	public Comparator<Address> getComparator() {
+		return comparator;
+	}
+
+	public void setComparator(Comparator<Address> comparator) {
+		this.comparator = comparator;
 	}
 
 }
